@@ -1,0 +1,10 @@
+<phpunit bootstrap="./bootstrap.php" colors="true" stopOnFailure="false" syntaxCheck="false" processIsolation="true">
+	<testsuites>
+		<testsuite name="AllTestSuites">
+			<directory suffix=".php">./testsuites</directory>
+			<logging>
+				<log type="coverage-html" target="./log/coverage-data-test" charset="UTF-8" yui="true" highlight="false" lowUpperBound="60" highLowerBound="90"/>
+			</logging>
+		</testsuite>
+	</testsuites>
+</phpunit>
