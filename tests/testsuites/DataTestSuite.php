@@ -1,6 +1,6 @@
 <?php
 
-require_once('../../inc/Data.php');
+require_once('../inc/Data.php');
 class DataTest extends PHPUnit_Framework_TestCase
 {
     public static function provider()

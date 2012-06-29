@@ -1,6 +1,6 @@
 <?php
 
-require_once('../../inc/functions.php');
+require_once('../inc/functions.php');
 class GeneralTest extends PHPUnit_Framework_TestCase
 { 
     public function testFunctions()
