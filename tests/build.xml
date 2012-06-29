@@ -59,7 +59,7 @@
     <!-- Generate API documentation -->
     <target name="phpdoc">
         <exec executable="phpdoc">
-            <arg line="--directory ${basedir}/../ --target ${basedir}/build/api --ignore ./" />
+            <arg line=" --ignore ${basedir} --directory ${basedir}/../ --target ${basedir}/build/api" />
         </exec>
     </target>
     <target name="phpcb">
