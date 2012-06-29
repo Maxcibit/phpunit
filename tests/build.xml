@@ -70,8 +70,8 @@
     </target>
     <!-- Generate API documentation -->
     <target name="phpdoc">
-        <exec executable="cmd">
-            <arg line="/c phpdoc 
+        <exec executable="phpdoc">
+            <arg line="
 			--directory ${basedir}/..
 			--target ${basedir}/build/api"/>
         </exec>
