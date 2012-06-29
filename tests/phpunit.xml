@@ -1,7 +1,16 @@
 <phpunit bootstrap="./bootstrap.php" colors="true" stopOnFailure="false" syntaxCheck="false" processIsolation="true">
-	<!--<testsuites>
-		<testsuite name="AllTestSuites">
+	<testsuites>
+		<testsuite name="ArrayTestSuite">
 			<directory suffix=".php">./testsuites</directory>
+			<file>ArrayTestSuite.php</directory>
 		</testsuite>
-	</testsuites>-->
+		<testsuite name="DataTestSuite">
+			<directory suffix=".php">./testsuites</directory>
+			<file>DataTestSuite.php</directory>
+		</testsuite>
+		<testsuite name="GeneralTestSuite">
+			<directory suffix=".php">./testsuites</directory>
+			<file>GeneralTestSuite.php</directory>
+		</testsuite>
+	</testsuites>
 </phpunit>

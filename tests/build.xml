@@ -14,7 +14,8 @@
     <target name="phpunit">
         <exec dir="${basedir}" executable="phpunit" failonerror="false">
             <!--configuration phpunit.xml-->
-            <arg line="--log-junit ${basedir}/build/logs/phpunit.xml
+            <arg line="--configuration phpunit.xml
+			--log-junit ${basedir}/build/logs/phpunit.xml
 			--coverage-html ${basedir}/build/coverage
 			--testdox-text ${basedir}/build/logs/testdox.txt
 			--process-isolation" />
