@@ -1,6 +1,6 @@
 <?php
 
-require('../../inc/ArrayFactory.php');
+require('../inc/ArrayFactory.php');
 
 class ArrayTest extends PHPUnit_Framework_TestCase
 {
