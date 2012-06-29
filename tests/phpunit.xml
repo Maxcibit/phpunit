@@ -3,7 +3,7 @@
 		<testsuite name="AllTestSuites">
 			<directory suffix=".php">./testsuites</directory>
 			<logging>
-				<log type="coverage-html" target="./log/coverage-data-test" charset="UTF-8" yui="true" highlight="false" lowUpperBound="60" highLowerBound="90"/>
+				<log type="coverage-html" target="./coverage-data-test" charset="UTF-8" yui="true" highlight="false" lowUpperBound="60" highLowerBound="90"/>
 			</logging>
 		</testsuite>
 	</testsuites>
