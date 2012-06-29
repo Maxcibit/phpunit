@@ -1,6 +1,6 @@
 <?php
 
-require('../../inc/functions.php');
+require('../inc/functions.php');
 
 class GeneralTest extends PHPUnit_Framework_TestCase
 { 

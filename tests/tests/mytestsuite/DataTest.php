@@ -1,6 +1,6 @@
 <?php
 
-require('../../inc/Data.php');
+require('../inc/Data.php');
 
 class DataTest extends PHPUnit_Framework_TestCase
 {
