@@ -82,5 +82,5 @@
         </exec>
     </target>
     <!--<target name="build" depends="clean,prepare,phpunit,phpcpd,phploc,parallelTasks,phpcb"/>-->
-	<target name="build" depends="clean,prepare,phpunit"/>
+	<target name="build" depends="clean,prepare,phpunit,parallelTasks"/>
 </project>
