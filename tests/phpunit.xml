@@ -1,8 +1,8 @@
 <phpunit bootstrap="./bootstrap.php" colors="true" stopOnFailure="false" syntaxCheck="false" processIsolation="true">
 	<testsuites>
 		<testsuite name="MyTestSuite">
-			<directory>/var/www/phpunit/tests/testsuites/</directory>
-			<file>/var/www/phpunit/tests/testsuites/MyTestSuite.php</file>			
+			<directory>testsuites/</directory>
+			<directory suffix=".php">../inc/</directory>
 		</testsuite>
 	</testsuites>
 </phpunit>
