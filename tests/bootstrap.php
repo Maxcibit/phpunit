@@ -34,9 +34,7 @@ unset($phpUnitVersion);
 require_once('../inc/Data.php');
 require_once('../inc/ArrayFactory.php');
 require_once('../inc/functions.php');
-require_once('testsuites/ArrayTest.php');
-require_once('testsuites/DataTest.php');
-require_once('testsuites/GeneralTest.php');
+require_once('testsuites/MyTestSuite.php');
 
 /**
  * Erstelle TestResult-Objekt und den Observer zum Debuggen
