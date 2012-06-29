@@ -73,7 +73,7 @@
         <exec executable="phpdoc">
             <arg line="--directory ${basedir}/..
 			--target ${basedir}/build/api
-			--ignore /ver/www/phpunit/tests/"/>
+			--ignore *.php"/>
         </exec>
     </target>
     <target name="phpcb">
