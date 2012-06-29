@@ -28,13 +28,6 @@ if ('@package_version@' !== $phpUnitVersion && version_compare($phpUnitVersion, 
 }
 unset($phpUnitVersion);
 
-/** 
- * Daten der Anwendung laden
- */
-require_once('../inc/Data.php');
-require_once('../inc/ArrayFactory.php');
-require_once('../inc/functions.php');
-
 /**
  * Erstelle TestResult-Objekt und den Observer zum Debuggen
  * der Testausführung.
