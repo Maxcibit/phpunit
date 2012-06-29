@@ -32,6 +32,7 @@ unset($phpUnitVersion);
  */
 require_once('../inc/Data.php');
 require_once('../inc/ArrayFactory.php');
+require_once('../inc/functions.php');
 
 /**
  * Erstelle TestResult-Objekt und den Observer zum Debuggen
@@ -42,7 +43,7 @@ $result = new PHPUnit_Framework_TestResult;
 require_once('TestDebugger.php');
 $result->addListener(new TestDebugger);
 
-/*require_once('testsuites/ArrayTestSuite.php');
+require_once('testsuites/ArrayTestSuite.php');
 $suite = new PHPUnit_Framework_TestSuite('class ArrayTest');
 $suite->addTest(new ArrayTest('testNewArrayIsEmpty'));
 $suite->addTest(new ArrayTest('testArrayContainsAnElement'));
@@ -56,6 +57,6 @@ $suite->run($result);
 require_once('testsuites/GeneralTestSuite.php');
 $suite = new PHPUnit_Framework_TestSuite('class GeneralTest');
 $suite->addTest(new GeneralTest('testFunctions'));
-$suite->run($result);*/
+$suite->run($result);
 
 ?>
