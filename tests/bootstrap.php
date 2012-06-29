@@ -32,9 +32,6 @@ unset($phpUnitVersion);
  */
 require_once('../inc/Data.php');
 require_once('../inc/ArrayFactory.php');
-require_once('../inc/functions.php');
-echo "abc" . addSampleText();
-echo "xyz" . addSampleText2();
 
 /**
  * Erstelle TestResult-Objekt und den Observer zum Debuggen
