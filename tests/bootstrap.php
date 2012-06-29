@@ -42,4 +42,19 @@ $result = new PHPUnit_Framework_TestResult;
 require_once('TestDebugger.php');
 $result->addListener(new TestDebugger);
 
+require_once('testsuites/ArrayTestSuite.php');
+
+$suite = new PHPUnit_Framework_TestSuite('class ArrayTest');
+$suite->addTest(new ArrayTest('testNewArrayIsEmpty'));
+$suite->addTest(new ArrayTest('testArrayContainsAnElement'));
+$suite->run($result);
+
+$suite = new PHPUnit_Framework_TestSuite('class DataTest');
+$suite->addTest(new DataTest('testAdd'));
+$suite->run($result);
+
+$suite = new PHPUnit_Framework_TestSuite('class GeneralTest');
+$suite->addTest(new GeneralTest('testFunctions'));
+$suite->run($result);
+
 ?>
