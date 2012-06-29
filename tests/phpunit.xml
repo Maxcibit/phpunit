@@ -1,13 +1,13 @@
 <phpunit bootstrap="./bootstrap.php" colors="true" stopOnFailure="false" syntaxCheck="false" processIsolation="true">
 	<testsuites>
 		<testsuite name="ArrayTestSuite">
-			<directory>/var/www/phpunit/tests/testsuites/ArrayTestSuite.php</directory>
+			<directory>./testsuites/ArrayTestSuite.php</directory>
 		</testsuite>
 		<testsuite name="DataTestSuite">
-			<directory>/var/www/phpunit/tests/testsuites/DataTestSuite.php</directory>
+			<directory>./testsuites/DataTestSuite.php</directory>
 		</testsuite>
 		<testsuite name="GeneralTestSuite">
-			<directory>/var/www/phpunit/tests/testsuites/GeneralTestSuite.php</directory>
+			<directory>./testsuites/GeneralTestSuite.php</directory>
 		</testsuite>
 	</testsuites>
 </phpunit>

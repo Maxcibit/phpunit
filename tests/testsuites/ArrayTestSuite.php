@@ -1,6 +1,5 @@
 <?php
 
-require_once('../inc/ArrayFactory.php');
 class ArrayTest extends PHPUnit_Framework_TestCase
 {
     public function testNewArrayIsEmpty()
