@@ -38,7 +38,7 @@ require_once('../inc/functions.php');
  * Erstelle TestResult-Objekt und den Observer zum Debuggen
  * der Testausführung.
  */
-$result = new PHPUnit_Framework_TestResult;
+/*$result = new PHPUnit_Framework_TestResult;
 
 require_once('TestDebugger.php');
 $result->addListener(new TestDebugger);
@@ -57,6 +57,6 @@ $suite->run($result);
 require_once('testsuites/GeneralTestSuite.php');
 $suite = new PHPUnit_Framework_TestSuite('class GeneralTest');
 $suite->addTest(new GeneralTest('testFunctions'));
-$suite->run($result);
+$suite->run($result);*/
 
 ?>
