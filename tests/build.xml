@@ -28,7 +28,7 @@
 			<antcall target="phpmd"/>
 			<antcall target="phpcpd"/>
 			<antcall target="phpcs"/>
-			<!--<antcall target="phpdoc"/>-->
+			<antcall target="phpdoc"/>
 		</parallel>
     </target>
     <!-- Generate jdepend.xml and software metrics charts -->
@@ -71,9 +71,9 @@
     <!-- Generate API documentation -->
     <target name="phpdoc">
         <exec executable="phpdoc">
-            <arg line="
-			--directory ${basedir}/..
-			--target ${basedir}/build/api"/>
+            <arg line="--directory ${basedir}/..
+			--target ${basedir}/build/api
+			--ignore ${basedir}/build"/>
         </exec>
     </target>
     <target name="phpcb">
@@ -83,5 +83,5 @@
 			--output ${basedir}/build/code-browser" />
         </exec>
     </target>
-    <target name="build" depends="clean,prepare,phpunit,phpcpd,phploc,parallelTasks,phpcb,phpdoc"/>
+    <target name="build" depends="clean,prepare,phpunit,phpcpd,phploc,parallelTasks,phpcb"/>
 </project>
