@@ -30,12 +30,12 @@ unset($phpUnitVersion);
 /** 
  * Daten der Anwendung laden
  */
-require_once('testsuites/ArrayTestSuite.php');
-require_once('testsuites/DataTestSuite.php');
-require_once('testsuites/GeneralTestSuite.php');
 require_once('../inc/Data.php');
 require_once('../inc/ArrayFactory.php');
 require_once('../inc/functions.php');
+require_once('testsuites/ArrayTestSuite.php');
+require_once('testsuites/DataTestSuite.php');
+require_once('testsuites/GeneralTestSuite.php');
 
 /**
  * Erstelle TestResult-Objekt und den Observer zum Debuggen
