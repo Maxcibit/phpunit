@@ -9,6 +9,11 @@ $test = "abc";
 $test .= addSampleText();
 $test .= addSampleText2();
 
+$doTheSame = 1;
+$doTheSame = 1;
+$doTheSame = 1;
+$doTheSame = 1;
+
 require_once('inc/ArrayFactory.php');
 $array = ArrayFactory::createEmptyArray();
 
