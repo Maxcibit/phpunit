@@ -2,15 +2,15 @@
 	<testsuites>
 		<testsuite name="ArrayTestSuite">
 			<directory suffix=".php">./testsuites</directory>
-			<file>ArrayTestSuite.php</directory>
+			<file>ArrayTestSuite.php</file>
 		</testsuite>
 		<testsuite name="DataTestSuite">
 			<directory suffix=".php">./testsuites</directory>
-			<file>DataTestSuite.php</directory>
+			<file>DataTestSuite.php</file>
 		</testsuite>
 		<testsuite name="GeneralTestSuite">
 			<directory suffix=".php">./testsuites</directory>
-			<file>GeneralTestSuite.php</directory>
+			<file>GeneralTestSuite.php</file>
 		</testsuite>
 	</testsuites>
 </phpunit>
