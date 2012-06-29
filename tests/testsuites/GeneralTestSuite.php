@@ -1,6 +1,6 @@
 <?php
 
-class DataTest extends PHPUnit_Framework_TestCase
+class GeneralTest extends PHPUnit_Framework_TestCase
 { 
     public function testFunctions()
     {
