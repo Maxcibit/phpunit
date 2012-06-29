@@ -59,6 +59,8 @@ $doTheSame = 1;
 $doTheSame = 1;
 $doTheSame = 2;
 
+$doTheSame = 3;
+
 require_once('inc/ArrayFactory.php');
 $array = ArrayFactory::createEmptyArray();
 
