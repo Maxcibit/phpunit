@@ -23,4 +23,29 @@ class ArrayTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(1, sizeof($fixture));
     }
 }
+
+class DataTest extends PHPUnit_Framework_TestCase
+{
+    public static function provider()
+    {
+        return Data::get();
+    }
+ 
+    /**
+     * @dataProvider provider
+     */
+    public function testAdd($a, $b, $c)
+    {
+        $this->assertEquals($c, $a + $b);
+    }
+}
+
+class GeneralTest extends PHPUnit_Framework_TestCase
+{ 
+    public function testFunctions()
+    {
+        $this->assertEquals("def", addSampleText());
+        $this->assertEquals("def", addSampleText2());
+    }
+}
 ?>

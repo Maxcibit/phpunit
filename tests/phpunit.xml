@@ -1,7 +1,7 @@
 <phpunit bootstrap="./bootstrap.php" colors="true" stopOnFailure="false" syntaxCheck="false" processIsolation="true">
 	<testsuites>
-		<testsuite>
-			<directory suffix="Test.php">./testsuites</directory>
+		<testsuite name="MyTestSuite">
+			<directory>./testsuites</directory>
 		</testsuite>
 	</testsuites>
 </phpunit>
