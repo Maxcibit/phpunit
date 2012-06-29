@@ -1,18 +1,10 @@
 <?php
 
-
+require_once('inc/functions.php');
 require_once('inc/Data.php');
+
 var_dump(Data::get());
 
-/**
- * sample for cpd
- */
-function addSampleText() {
-	return "def";	
-}
-function addSampleText2() {
-	return "def";	
-}
 $test = "abc";
 $test .= addSampleText();
 $test .= addSampleText2();
