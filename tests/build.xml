@@ -53,13 +53,13 @@
     <!-- Generate checkstyle.xml -->
     <target name="phpcs">
 		<exec executable="phpcs" output="/dev/null">
-			<arg line="--report=checkstyle --report-file=${basedir}/build/logs/checkstyle.xml --standard=Sebastian ${basedir}/.." />
+			<arg line="--report=checkstyle --report-file=${basedir}/build/logs/checkstyle.xml ${basedir}/.." />
 		</exec>
     </target>
     <!-- Generate API documentation -->
     <target name="phpdoc">
         <exec executable="phpdoc">
-            <arg line=" --ignore ${basedir} --directory ${basedir}/../ --target ${basedir}/build/api --ignore tests/" />
+            <arg line=" --directory ${basedir}/../ --target ${basedir}/build/api --ignore tests/" />
         </exec>
     </target>
     <target name="phpcb">
