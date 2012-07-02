@@ -53,7 +53,7 @@
     <!-- Generate checkstyle.xml -->
     <target name="phpcs">
 		<exec executable="phpcs" output="/dev/null">
-			<arg line="--report=checkstyle --report-file=${basedir}/build/logs/checkstyle.xml ${basedir}/.." />
+			<arg line="--report=checkstyle --report-file=${basedir}/build/logs/checkstyle.xml --standard=Sebastian ${basedir}/.." />
 		</exec>
     </target>
     <!-- Generate API documentation -->
@@ -64,7 +64,7 @@
     </target>
     <target name="phpcb">
         <exec executable="phpcb">
-            <arg line="--log ${basedir}/build/logs --source ${basedir}/.. --output ${basedir}/build/code-browser --ignore ${basedir}/build" />
+            <arg line="phpcs --report=checkstyle --ignore=tests/build --report-file=./tests/build/logs/checkstyle.xml ./" />
         </exec>
     </target>
     <target name="build" depends="clean,prepare,phpdoc,phpunit,phpcpd,phploc,parallelTasks,phpcb"/>
